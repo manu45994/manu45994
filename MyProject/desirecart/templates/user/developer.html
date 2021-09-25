@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Developer</title>
+    {% endblock %}
+{% block content %}
+{% load static %}
+<style>
+
+    @media (max-width: 767px) {
+  .nc h3{
+  font-size:16px;
+
+  } }
+</style>
+<div class="container-fluid   text-white">
+
+    <div class="row p-5 m-5 bg-primary rounded">
+        <div class="col-sm-4">
+            <img style="border-radius:50%;" src="{% static 'images/nc.jpg'%}" class="img-responsive img-thumbnail">
+        </div>
+        <div class="col-sm-8 py-5 nc">
+            <h3>Developed By-: Satyendra Singh Yadav</h3>
+            <h3>College: Swami Sahajanand Polytechnic Institute,Azamgarh</h3>
+            <h3>Branch: Computer Science & Engineering</h3>
+            <h3>Email: yadavji232333@gmail.com</h3>
+            <h3>Address: Ghazipur,Uttar Pradesh</h3>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+ {% endblock %}
